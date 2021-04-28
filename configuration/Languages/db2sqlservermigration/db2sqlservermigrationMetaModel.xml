@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metaModel file_level="client"  file_no="91">
+
+	
+	
+
+     <partialType name="sourceFile" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptSchema">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptTable" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+     
+     <partialType name="SQLScriptTableColumn" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+     
+     <partialType name="SQLScriptIndex" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptProcedure" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptDML" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptFunction" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+     
+       <partialType name="SQLScriptView" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+      <partialType name="SQLScriptTrigger" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+       <partialType name="SQLScriptPackage" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+      <partialType name="SQLScriptType" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+    
+     <partialType name="SQLScriptForeignKey" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+    
+        
+     <partialType name="SQLScriptUniqueConstraint" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+      <partialType name="SQLScriptEvent" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+    
+     <partialType name="SQLScriptSynonym" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+     <partialType name="SQLScriptTableSynonym" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+     <partialType name="SQLScriptViewSynonym" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+     <partialType name="SQLScriptFunctionSynonym" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+     <partialType name="SQLScriptProcedureSynonym" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptPackageSynonym" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+    
+    <partialType name="SQLScriptTypeSynonym" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+     <partialType name="SQLScriptMethod" >
+        <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+          
+     <category name="dbsqlservermigration_CustomMetrics" id="2091950">
+	  <description>db2 to SQL server migration code items need to be addressed</description>
+	  	  <property name="SQL_language_elements" type="integer"   id="2091952">
+			<description>SQL language elements variations between Db2 to SQL server</description>
+			<attribute name="INF_TYPE" intValue="2091930"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	 
+	  <property name="Data_type_mapping" type="integer"   id="2091954">
+			<description>Data type mapping between Db2 to SQL server</description>
+			<attribute name="INF_TYPE" intValue="2091932"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	 
+	 <property name="Db2_SQL_functions" type="integer"   id="2091956">
+			<description>Db2 SQL functions variations between Db2 to SQL server</description>
+			<attribute name="INF_TYPE" intValue="2091934"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	 
+	  <property name="SQL_SELECT_statement" type="integer"   id="2091958">
+			<description>SQL SELECT statement variations between Db2 to SQL server</description>
+			<attribute name="INF_TYPE" intValue="2091936"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	 
+	  <property name="CREATE_DATABASE_statement" type="integer"   id="2091960">
+			<description>CREATE DATABASE statement variations between Db2 to SQL server</description>
+			<attribute name="INF_TYPE" intValue="2091938"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	 
+	 <property name="CREATE_TABLE_statement" type="integer"   id="2091962">
+			<description>CREATE TABLE statement variations between Db2 to SQL server</description>
+			<attribute name="INF_TYPE" intValue="2091940"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	
+	  <property name="INDEX_statement" type="integer"   id="2091964">
+			<description>INDEX statement variations between Db2 to SQL server</description>
+			<attribute name="INF_TYPE" intValue="2091942"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	 
+	  <property name="stored_procedures" type="integer"   id="2091966">
+			<description>stored procedures variations between Db2 to SQL server</description>
+			<attribute name="INF_TYPE" intValue="2091944"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	 
+
+      <property name="user_defined_functions" type="integer"   id="2091968">
+			<description>user defined functions variations between Db2 to SQL server</description>
+			<attribute name="INF_TYPE" intValue="2091946"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	 	 
+	  <property name="procedural_SQL_statements" type="integer"   id="2091970">
+			<description>Converting procedural SQL statements used in stored procedures, functions and triggers from IBM Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091948"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+		 
+	  <property name="SQL_statements" type="integer"   id="2091972">
+			<description>Converting SQL statements from Db2 to SQL server</description>
+			<attribute name="INF_TYPE" intValue="2091974"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+</category>
+	
+    <category name="dbsqlservermigrationScript" rid="5">
+      <description>Custom category for Db2 to SQL server migration</description>
+      
+        <property name="CONCAT" type="string" rid="430">
+            <description>Converting SQL language elements from Db2 CONCAT to SQLserver symbol</description>
+            <attribute name="INF_TYPE" intValue="2091801"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+        <property name="DATEADD" type="string" rid="431">
+            <description>Converting SQL language elements from Db2 symbol  to SQLserver DATEADD </description>
+            <attribute name="INF_TYPE" intValue="2091802"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+        <property name="BLOB" type="string" rid="432">
+            <description>Data type mapping from Db2 to SQL Server from BLOB to SQLserver VARBINARY </description>
+            <attribute name="INF_TYPE" intValue="2091803"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+       <property name="CLOB" type="string" rid="433">
+            <description>Data type mapping from Db2 to SQL Server from CLOB to SQLserver VARCHAR</description>
+            <attribute name="INF_TYPE" intValue="2091804"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+       <property name="DBCLOB" type="string" rid="434">
+            <description>Data type mapping from Db2 to SQL Server from DBCLOB to SQL server NVARCHAR </description>
+            <attribute name="INF_TYPE" intValue="2091805"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+       <property name="DECFLOAT" type="string" rid="435">
+            <description>Data type mapping from Db2 to SQL Server from DECFLOAT to SQL server FLOAT</description>
+            <attribute name="INF_TYPE" intValue="2091806"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+       <property name="DOUBLE" type="string" rid="436">
+            <description>Data type mapping from Db2 to SQL Server from DOUBLE to SQL server FLOAT</description>
+            <attribute name="INF_TYPE" intValue="2091807"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+       <property name="GRAPHIC" type="string" rid="437">
+            <description>Data type mapping from Db2 to SQL Server from GRAPHIC to SQL server NCHAR</description>
+            <attribute name="INF_TYPE" intValue="2091808"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	   <property name="LONG_VARCHAR" type="string" rid="438">
+            <description>Data type mapping from Db2 to SQL Server from LONG_VARCHAR to SQL server VARCHAR</description>
+            <attribute name="INF_TYPE" intValue="2091809"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="NCLOB" type="string" rid="439">
+            <description>Data type mapping from Db2 to SQL Server from NCLOB to SQL server NVARCHAR</description>
+            <attribute name="INF_TYPE" intValue="2091810"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	   <property name="TIMESTAMP" type="string" rid="440">
+            <description>Data type mapping from Db2 to SQL Server from TIMESTAMP to SQL server DATETIME2</description>
+            <attribute name="INF_TYPE" intValue="2091811"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="VARGRAPHIC" type="string" rid="441">
+            <description>Data type mapping from Db2 to SQL Server VARGRAPHIC to SQL server NVARCHAR </description>
+            <attribute name="INF_TYPE" intValue="2091812"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	 
+	   <property name="NUM" type="string" rid="442">
+            <description>Data type mapping from Db2 to SQL Server from NUM to SQL server NUMERIC  </description>
+            <attribute name="INF_TYPE" intValue="2091813"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	   <property name="CHAR" type="string" rid="443">
+            <description>Converting Builtin SQL Functions from Db2  CHAR to SQL server CONVERT to VARCHAR or datetime or style </description>
+            <attribute name="INF_TYPE" intValue="2091814"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	   <property name="CURRENT_DATE" type="string" rid="444">
+            <description>Converting Built-in SQL Functions from Db2  CURRENT DATE to sql server CONVERT to DATE or TIME</description>
+            <attribute name="INF_TYPE" intValue="2091816"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  
+	   <property name="INT" type="string" rid="445">
+            <description>Converting Builtin SQL functions from Db2 INT to SQL server CAST </description>
+            <attribute name="INF_TYPE" intValue="2091817"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  
+	   <property name="LOCATE" type="string" rid="456">
+            <description>Converting Builtin SQL functions from Db2  LOCATE to SQL server  CHARINDEX  </description>
+            <attribute name="INF_TYPE" intValue="2091818"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  
+		  
+	   <property name="SMALLHINT" type="string" rid="457">
+            <description>Converting Builtin SQL functions from Db2 SMALLHINT to SQL server CAST  </description>
+            <attribute name="INF_TYPE" intValue="2091819"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	
+	   <property name="SUBSTR" type="string" rid="458">
+            <description>Converting Builtin SQL functions from Db2  SUBSTR to SQL server SUBSTRING  </description>
+            <attribute name="INF_TYPE" intValue="2091820"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  
+	 
+	  
+	   <property name="USER" type="string" rid="459">
+            <description>Converting Builtin SQL functions from Db2 USER to sqlsever SYSTEM_USER  </description>
+            <attribute name="INF_TYPE" intValue="2091821"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  
+	   <property name="SYSDUMMY" type="string" rid="460">
+            <description>Converting SQL SELECT statement from Db2 SYSDUMMY1 to SQL server no equivalent  </description>
+            <attribute name="INF_TYPE" intValue="2091822"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  
+	   <property name="FOR_READ_ONLY" type="string" rid="461">
+            <description>Converting SQL SELECT statement from Db2 FOR READ ONLY to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091823"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	 
+	   
+      
+	  	
+	   <property name="WITH_UR" type="string" rid="462">
+            <description>Converting SQL SELECT statement from Db2 WITH UR to WITH NOCKLOCK </description>
+            <attribute name="INF_TYPE" intValue="2091825"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  	 
+	   <property name="BUFFERPOOL" type="string" rid="463">
+            <description>Converting CREATE DATABASE statement from Db2 BUFFERPOOL to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091856"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  	 
+	   <property name="INDEXBP" type="string" rid="464">
+            <description>Converting CREATE DATABASE statement from Db2 INDEXBP to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091826"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  	
+	   <property name="STOGROUP" type="string" rid="465">
+            <description>Converting CREATE DATABASE statement from Db2 STOGROUP to SQL server no equivalent</description>
+            <attribute name="INF_TYPE" intValue="2091827"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  	
+	   <property name="UNICODE" type="string" rid="466">
+            <description>Converting CREATE DATABASE statement from Db2 UNICODE to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091828"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  	 
+	   <property name="FOR_BIT_DATA" type="string" rid="467">
+            <description>Converting CREATE DATABASE statement from Db2 FOR_BIT_DATA to SQL server no equivalent</description>
+            <attribute name="INF_TYPE" intValue="2091829"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  	 
+	   <property name="MIXED_DATA" type="string" rid="468">
+            <description>Converting CREATE DATABASE statement from Db2 MIXED_DATA to SQL server no equivalent  </description>
+            <attribute name="INF_TYPE" intValue="2091830"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  	 
+	   <property name="IN_TABLESPACE" type="string" rid="469">
+            <description>Converting CREATE DATABASE statement from Db2 IN_TABLESPACE to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091831"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  	
+	   <property name="EBCDIC" type="string" rid="470">
+            <description>Converting CREATE DATABASE statement from Db2 EBCDIC to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091832"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  	  
+	   <property name="CHANGES" type="string" rid="471">
+            <description>Converting CREATE DATABASE statement from Db2 CHANGES to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091833"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  
+	   <property name="ALL" type="string" rid="472">
+            <description>Converting CREATE DATABASE statement from Db2 ALL to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091834"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+     
+	  <property name="WITH_RESTRICT_ON_DROP" type="string" rid="473">
+            <description>Converting CREATE DATABASE statement from Db2 WITH_RESTRICT_ON_DROP to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091835"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="VOLATILE" type="string" rid="474">
+            <description>Converting CREATE DATABASE statement from Db2 VOLATILE to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091836"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	    <property name="YES" type="string" rid="475">
+            <description>Converting CREATE DATABASE statement from Db2 YES to SQL server no equivalent</description>
+            <attribute name="INF_TYPE" intValue="2091837"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="VARCHAR" type="string" rid="476">
+            <description>Implicit DEFAULT values in Db2 VARCHAR to SQL server VARCHAR2 </description>
+            <attribute name="INF_TYPE" intValue="2091838"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="INTEGER" type="string" rid="478">
+            <description>Implicit DEFAULT values in Db2 INTEGER to SQL server NUMBER </description>
+            <attribute name="INF_TYPE" intValue="2091839"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="DECIMAL" type="string" rid="479">
+            <description>Implicit DEFAULT values in Db2 DECIMAL to SQL server NUMBER  </description>
+            <attribute name="INF_TYPE" intValue="2091840"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="NUMERIC" type="string" rid="480">
+            <description>Implicit DEFAULT values in Db2 NUMERIC  to SQL server NUMBER</description>
+            <attribute name="INF_TYPE" intValue="2091841"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="DATE_WITH_DEFAULT" type="string" rid="481">
+            <description>Implicit DEFAULT values in Db2 DATE_WITH_DEFAULT to SQL server DATE_DEFAULT_GETDATE </description>
+            <attribute name="INF_TYPE" intValue="2091842"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="TIMESTAMP_WITH_DEFAULT" type="string" rid="482">
+            <description>Converting Builtin functions Db2 TIMESTAMP_WITH_DEFAULT to SQLserver TIMESTAMP_DEFAULT_GETDATE </description>
+            <attribute name="INF_TYPE" intValue="2091843"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="PICTFREE" type="string" rid="483">
+            <description>Converting CREATE INDEX statement Db2 PICTFREE to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091857"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="NO" type="string" rid="484">
+            <description>Converting CREATE INDEX statement Db2 NO to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091844"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	   <property name="FREEPAGE" type="string" rid="485">
+            <description>Additional Db2 for z_OS clauses Db2 FREEPAGE to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091845"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+			</property>
+       <property name="BUFFERPOOL_Zos" type="string" rid="486">
+            <description>Additional Db2 for z_OS clauses Db2 BUFFERPOOL to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091858"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+			</property>
+       <property name="NONE" type="string" rid="487">
+            <description>Additional Db2 for z_OS clauses Db2 NONE to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091847"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+			</property>
+       <property name="NOT_CLUSTER" type="string" rid="488">
+            <description>Additional Db2 for z_OS clauses Db2 NOT_CLUSTER to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091910"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+			</property>
+      <property name="YES_zos" type="string" rid="489">
+            <description>Additional Db2 for z_OS clauses Db2 YES to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091849"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+			</property>
+	 <property name="NO_zos" type="string" rid="490">
+            <description>Additional Db2 for z_OS clauses Db2 NO to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091850"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+			</property>
+   <property name="PIECESIZE" type="string" rid="491">
+            <description>Additional Db2 for z_OS clauses Db2 PIECESIZE to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091851"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+			</property>
+      <property name="NOT_PADDED" type="string" rid="492">
+            <description>Additional Db2 for z_OS clauses Db2 NOT_PADDED to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="58"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+			</property>
+      <property name="PRIQTY" type="string" rid="493">
+            <description>USING STOGROUP clause Db2 for z_OS Db2 PRIQTY to SQL server no equivalent</description>
+            <attribute name="INF_TYPE" intValue="2091852"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	 
+	   <property name="SECQTY" type="string" rid="494">
+            <description>USING STOGROUP clause Db2 for z_OS Db2 SECQTY to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091853"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	    <property name="YES_STOGROUP" type="string" rid="495">
+            <description>USING STOGROUP clause Db2 for z_OS Db2 YES to SQL server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091854"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	   <property name="MICROSECOND" type="string" rid="496">
+            <description>Converting Builtin functions Db2 MICROSECOND to SQL server TO_NUMBER </description>
+            <attribute name="INF_TYPE" intValue="2091855"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+<!-- 	    <property name="" type="string" rid="497"> -->
+<!--             <description> </description> -->
+<!--             <attribute name="INF_TYPE" intValue="2091856"/> -->
+<!--             <attribute name="INF_SUB_TYPE" intValue="1"/> -->
+<!--             <attribute name="ACCESS_APPVIEW" intValue="1"/> -->
+<!--             <attribute name="ACCESS_CVS" intValue="1"/> -->
+<!--             <attribute name="ACCESS_HTML" intValue="1"/> -->
+<!--       </property> -->
+<!-- 	   <property name="" type="string" rid="498"> -->
+<!--             <description> </description> -->
+<!--             <attribute name="INF_TYPE" intValue="2091857"/> -->
+<!--             <attribute name="INF_SUB_TYPE" intValue="1"/> -->
+<!--             <attribute name="ACCESS_APPVIEW" intValue="1"/> -->
+<!--             <attribute name="ACCESS_CVS" intValue="1"/> -->
+<!--             <attribute name="ACCESS_HTML" intValue="1"/> -->
+<!--       </property> -->
+	
+<!-- 	   <property name="" type="string" rid="499"> -->
+<!--             <description> </description> -->
+<!--             <attribute name="INF_TYPE" intValue="2091858"/> -->
+<!--             <attribute name="INF_SUB_TYPE" intValue="1"/> -->
+<!--             <attribute name="ACCESS_APPVIEW" intValue="1"/> -->
+<!--             <attribute name="ACCESS_CVS" intValue="1"/> -->
+<!--             <attribute name="ACCESS_HTML" intValue="1"/> -->
+<!--       </property> -->
+<!-- 	 <property name="" type="string" rid="500"> -->
+<!--             <description></description> -->
+<!--             <attribute name="INF_TYPE" intValue="2091859"/> -->
+<!--             <attribute name="INF_SUB_TYPE" intValue="1"/> -->
+<!--             <attribute name="ACCESS_APPVIEW" intValue="1"/> -->
+<!--             <attribute name="ACCESS_CVS" intValue="1"/> -->
+<!--             <attribute name="ACCESS_HTML" intValue="1"/> -->
+<!--       </property>  -->
+<!-- 	  <property name="" type="string" rid="501"> -->
+<!--             <description> </description> -->
+<!--             <attribute name="INF_TYPE" intValue="2091860"/> -->
+<!--             <attribute name="INF_SUB_TYPE" intValue="1"/> -->
+<!--             <attribute name="ACCESS_APPVIEW" intValue="1"/> -->
+<!--             <attribute name="ACCESS_CVS" intValue="1"/> -->
+<!--             <attribute name="ACCESS_HTML" intValue="1"/> -->
+<!--       </property> -->
+	  
+	   <property name="DETERMINISTIC" type="string" rid="502">
+            <description>Converting user-defined functions from Db2 DETERMINISTIC to SQL Server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091861"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+     
+	  <property name="NOT_DETERMINSTIC" type="string" rid="503">
+            <description>Converting user-defined functions from Db2 NOT_DETERMINSTIC to SQL Server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091862"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="LANGUAGE_SQL" type="string" rid="504">
+            <description>Converting user-defined functions from Db2 LANGUAGE_SQL to SQL Server no equivalent</description>
+            <attribute name="INF_TYPE" intValue="2091863"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	   <property name="CONTAINS_SQL" type="string" rid="505">
+            <description>Converting user-defined functions from Db2 CONTAINS_SQL to SQL Server no equivalent  </description>
+            <attribute name="INF_TYPE" intValue="2091864"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="NO_SQL" type="string" rid="506">
+            <description>Converting user-defined functions from Db2 NO_SQL to SQL Server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091865"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+    <property name="READS_SQL_DATA" type="string" rid="507">
+            <description>Converting user-defined functions from Db2 READS_SQL_DATAto SQL Server no equivalent</description>
+            <attribute name="INF_TYPE" intValue="2091866"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="MODIFIES_SQL_DATA" type="string" rid="508">
+            <description>Converting user-defined functions from Db2 MODIFIES_SQL_DATA to SQL Server no equivalent</description>
+            <attribute name="INF_TYPE" intValue="2091867"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="SPECIFIC" type="string" rid="509">
+            <description>Converting user-defined functions from Db2 SPECIFIC to SQL Server no equivalent  </description>
+            <attribute name="INF_TYPE" intValue="2091868"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	   <property name="CALLED_ON_NULL_INPUT" type="string" rid="510">
+            <description>Converting user-defined functions from Db2 CALLED_ON_NULL_INPUT to SQL Server no equivalent  </description>
+            <attribute name="INF_TYPE" intValue="2091869"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="INHERIT_SPECIAL_REGISTERS" type="string" rid="511">
+            <description>Converting user-defined functions from Db2 INHERIT_SPECIAL_REGISTERS to SQL Server no equivalent</description>
+            <attribute name="INF_TYPE" intValue="2091870"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	   <property name="NO_EXTERNAL_ACTION" type="string" rid="512">
+            <description>Converting user-defined functions from Db2 NO_EXTERNAL_ACTION  to SQL Server no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091872"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="STRIP" type="string" rid="513">
+            <description>Converting Builtin functions Db2 STRIP to SQLserver TRIM </description>
+            <attribute name="INF_TYPE" intValue="2091873"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+      
+      
+      <property name="TIMEStamp" type="string" rid="514">
+            <description>Converting Builtin functions Db2 TIME to SQLserver TO_TIMESTAMP </description>
+            <attribute name="INF_TYPE" intValue="2091874"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	 <property name="TIMESTAMPDIFF" type="string" rid="515">
+            <description>Converting Builtin functions Db2 TIMESTAMPDIFF to SQLserver no equivalent			</description>
+            <attribute name="INF_TYPE" intValue="2091875"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="TRUNC_TIMESTAMP" type="string" rid="516">
+            <description>Converting Builtin functions Db2 TRUNC_TIMESTAMP to SQLserver TRUNC </description>
+            <attribute name="INF_TYPE" intValue="2091876"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="TRUNCATE" type="string" rid="517">
+            <description>Converting Builtin functions Db2 TRUNCATE to SQLserver TRUNC </description>
+            <attribute name="INF_TYPE" intValue="2091877"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="UCASE" type="string" rid="518">
+            <description>Converting Builtin functions Db2 UCASE to SQLserver UPPER </description>
+            <attribute name="INF_TYPE" intValue="2091878"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="VALUE" type="string" rid="519">
+            <description>Converting Builtin functions Db2 VALUE to SQLserver COALESCE </description>
+            <attribute name="INF_TYPE" intValue="2091879"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="VARCHAR_Buildin" type="string" rid="520">
+            <description>Converting Builtin functions Db2 VARCHAR to SQLserver TO_CHAR </description>
+            <attribute name="INF_TYPE" intValue="2091880"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="VARCHAR_BIT_FORMER" type="string" rid="521">
+            <description>Converting Builtin functions Db2 VARCHAR_BIT_FORMER  to SQLserver HEXTORAW </description>
+            <attribute name="INF_TYPE" intValue="2091881"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="VARCHAR_FORMAT" type="string" rid="522">
+            <description>Converting Builtin functions Db2 VARCHAR_FORMAT  to SQLserver TO_CHAR </description>
+            <attribute name="INF_TYPE" intValue="2091882"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="VARCHAR_FORMAT_BIT" type="string" rid="523">
+            <description>Converting Builtin functions Db2 VARCHAR_FORMAT_BIT  to SQLserver RAWTOHEX </description>
+            <attribute name="INF_TYPE" intValue="2091883"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="VARGRAPHIC_Buildin" type="string" rid="524">
+            <description>Converting Builtin functions Db2 VARGRAPHIC  to SQLserver TO_NCHAR </description>
+            <attribute name="INF_TYPE" intValue="2091884"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="WEEK" type="string" rid="525">
+            <description>Converting Builtin functions Db2 WEEK  to SQLserver HEXTORAW </description>
+            <attribute name="INF_TYPE" intValue="2091885"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  <property name="XMLDOCUMENT" type="string" rid="526">
+            <description>Converting Builtin functions Db2 XMLDOCUMENT  to SQLserver no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091886"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	 
+	  <property name="XMLNAMESPACES" type="string" rid="527">
+            <description>Converting Builtin functions Db2 XMLNAMESPACES  to SQLserver  no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091887"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	  
+	  <property name="XMLROW" type="string" rid="528">
+            <description>Converting Builtin functions Db2 XMLROW  to SQLserver  no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091888"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	 
+	  <property name="XMLTEXT" type="string" rid="529">
+            <description>Converting Builtin functions Db2 XMLTEXT  to SQLserver  no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091889"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	 
+	  <property name="XMLVALIDATE" type="string" rid="530">
+            <description>Converting Builtin functions Db2 XMLVALIDATE  to SQLserver no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091890"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	 
+	  <property name="XMLXMLXSROBJECTID" type="string" rid="531">
+            <description>Converting Builtin functions Db2 XMLXMLXSROBJECTID to SQLserver no equivalent </description>
+            <attribute name="INF_TYPE" intValue="2091891"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	 
+	  <property name="YEAR_Builin" type="string" rid="532">
+            <description>Converting Builtin functions Db2 YEAR  to SQLserver EXTRACT </description>
+            <attribute name="INF_TYPE" intValue="2091892"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+       <property name="DATATYPEBIGINT" type="string" rid="533">
+            <description>Converting Datatype Db2 BIGINT  to SQLserver NUMBER</description>
+            <attribute name="INF_TYPE" intValue="2091893"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="CHAR_FOR_BIT_DATA" type="string" rid="534">
+            <description>Converting datatype Db2 CHAR_ FOR _BIT _DATA  to SQLserver RAW </description>
+            <attribute name="INF_TYPE" intValue="2091894"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="CHAACTER_VARYING" type="string" rid="535">
+            <description>Converting Datatype Db2 CHRACTER_VARYING to SQLserver VARCHAR </description>
+            <attribute name="INF_TYPE" intValue="2091895"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+	
+	  <property name="DATATYPEDBCLOB" type="string" rid="536">
+            <description>Converting Datype Db2 DBCLOB  to SQLserver NCLOB </description>
+            <attribute name="INF_TYPE" intValue="2091896"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="DATATYPEDECIMAL" type="string" rid="537">
+            <description>Converting Datatype Db2 DECIMAL  to SQLserver NUMBER</description>
+            <attribute name="INF_TYPE" intValue="2091897"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+      
+	  <property name="DATATYPEDECFLOAT" type="string" rid="538">
+            <description>Converting Datatype Db2 DECFLOAT to SQLserver NUMBER</description>
+            <attribute name="INF_TYPE" intValue="2091898"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="DATATYPEFLOAT" type="string" rid="539">
+            <description>Converting Datatype Db2 FLOAT to SQLserver BINARY_DOUBLE </description>
+            <attribute name="INF_TYPE" intValue="2091899"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="DATATYPEGRAPHIC" type="string" rid="540">
+            <description>Converting Datatype Db2 GRAPHIC  to SQLserver BINARY_DOUBLE</description>
+            <attribute name="INF_TYPE" intValue="2091900"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="INTEGER_Datatype" type="string" rid="541">
+            <description>Converting Datatype Db2 INTEGER to SQLserver NUMBER </description>
+            <attribute name="INF_TYPE" intValue="2091901"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="NCHAR_VARYING" type="string" rid="542">
+            <description>Converting Datatype Db2 NCHAR_VARYING  to SQLserver NVARCHAR</description>
+            <attribute name="INF_TYPE" intValue="2091902"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	 <property name="NUMERIC_Dattype" type="string" rid="543">
+            <description>Converting Datatype Db2 NUMERIC  to SQLserver NUMBER</description>
+            <attribute name="INF_TYPE" intValue="2091903"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="REAL" type="string" rid="554">
+            <description>Converting Datatype Db2 REAL  to SQLserver BINARY_FLOAT</description>
+            <attribute name="INF_TYPE" intValue="2091904"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="SMALLINT" type="string" rid="555">
+            <description>Converting Datatype Db2 SMALLINT  to SQLserver NUMBER</description>
+            <attribute name="INF_TYPE" intValue="2091905"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="DATATYPETIME" type="string" rid="556">
+            <description>Converting Datatype Db2 TIME  to TIMESTAMP</description>
+            <attribute name="INF_TYPE" intValue="2091906"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="DATATYPEVARCHAR" type="string" rid="557">
+            <description>Converting Datatype Db2 VARCHAR  to SQLserver VARCHAR2</description>
+            <attribute name="INF_TYPE" intValue="2091907"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="VARCHAR_FOR_BIT_DATA" type="string" rid="558">
+            <description>Converting Datatype Db2   VARCHAR_ FOR _BIT_ DATAto SQLserver RAW </description>
+            <attribute name="INF_TYPE" intValue="2091908"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="DATATYPEVARGRAPHIC" type="string" rid="559">
+            <description>Converting Datatype Db2 VARGRAPHIC to SQLserver NVARCHAR2</description>
+            <attribute name="INF_TYPE" intValue="2091909"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  
+     
+	</category>
+</metaModel>
+
