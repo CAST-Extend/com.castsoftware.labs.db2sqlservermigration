@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<metric id="2091952" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="description">
+	<metric id="2091000" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="description">
 		<english>This quality rule searches for following SQL language elements inside SQL files:
 like CONCAT, ...
 The list of SQL language elements from DB2 to SQL Server searched can be configured in parsedefine.xml at the root of the extension. The Rulename is "SQL_language_elements".</english>
 	</metric>
-	<metric id="2091952" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="name">
+	<metric id="2091000" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="name">
 		<english>SQL language elements varaitons between Db2 to Sql server</english>
 	</metric>
-	<metric id="2091952" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="output">
+	<metric id="2091000" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="output">
 		<english>Associated to each sql with violation, the quality rule provides:
 - The number of violation patterns
 - Bookmarks for violation patterns found in source code</english>
 	</metric>
-	<metric id="2091952" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="rationale">
+	<metric id="2091000" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="rationale">
 		<english>Without adaptation, the SQL script won’t compile on SQL Server, leading to error</english>
 	</metric>
-	<metric id="2091952" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="remediation">
+	<metric id="2091000" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="remediation">
 		<english>Review the implementation and convert to SQL Server supported language elements.</english>
 	</metric>
-	<metric id="2091952" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="associatedValueName">
+	<metric id="2091000" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="associatedValueName">
 		<english>Number of violation patterns found in DB2 SQL file, Built-in SQL Functions.</english>
 	</metric>
-	<metric id="2091952" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="reference">
+	<metric id="2091000" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="reference">
 		<english>Db2 migration best practices. 
 https://www.sqlines.com/db2-to-sql-server#language-elements</english>
 	</metric>
-	<metric id="2091952" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="total">
+	<metric id="2091000" type="quality-rule" originalName="SQL language elements varaitons between Db2 to Sql server" section="total">
 		<english>Number of DB2 SQL file.</english>
 	</metric>
 	<metric id="2091954" type="quality-rule" originalName="Data type mapping between Db2 to SQL server" section="description">
@@ -60,7 +60,7 @@ The list of Data type searched can be configured in parsedefine.xml at the root 
 	</metric>
 	<metric id="2091956" type="quality-rule" originalName="Db2 SQL functions variations between Db2 to SQL server" section="description">
 		<english>This quality rule searches for following SQL functions inside SQL files:
-CHAR, CURRENT DATE,	CURRENT_DATE, DAYOFWEEK_ISO, INT, LOCATE,SMALLINT, SUBSTR, USER.
+CHAR, CURRENT DATE, CURRENT_DATE, DAYOFWEEK_ISO, INT, LOCATE,SMALLINT, SUBSTR, USER.
 The list of SQL functions searched can be configured in parsedefine.xml at the root of the extension. The Rulename is "Db2_SQL_functions".</english>
 	</metric>
 	<metric id="2091956" type="quality-rule" originalName="Db2 SQL functions variations between Db2 to SQL server" section="name">

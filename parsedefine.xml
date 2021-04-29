@@ -10,6 +10,18 @@
 		<propertyname>DATEADD</propertyname>
 		<Rulename>SQL_language_elements</Rulename>
 	</Search>
+	
+	<javafileSearch>
+		<RegexPattern>\bCONCAT\b</RegexPattern>
+		<propertyname>CONCAT</propertyname>
+		<Rulename>SQL_language_elements</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bDATEADD\b</RegexPattern>
+		<propertyname>DATEADD</propertyname>
+		<Rulename>SQL_language_elements</Rulename>
+	</javafileSearch>
+	
 	<Search>
 		<RegexPattern>\bBLOB\b</RegexPattern>
 		<propertyname>BLOB</propertyname>

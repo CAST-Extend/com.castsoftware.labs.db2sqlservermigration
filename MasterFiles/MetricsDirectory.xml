@@ -4,7 +4,7 @@
 	
     <metric id="61004" type="technical-criterion" originalName="Architecture - OS and Platform Independence" active='N/A' detached='N/A' ignored="false"/>
 	
-	<metric id='2091952' type='quality-rule' originalName='SQL language elements variations between Db2 to SQL server' active='true' detached='false' ignored='false' />
+	<metric id='2091000' type='quality-rule' originalName='SQL language elements variations between Db2 to SQL server' active='true' detached='false' ignored='false' />
     <metric id='2091954' type='quality-rule' originalName='Data type mapping between Db2 to SQL server' active='true' detached='false' ignored='false' />
     <metric id='2091956' type='quality-rule' originalName='Db2 SQL functions variations between Db2 to SQL server' active='true' detached='false' ignored='false' />
     <metric id='2091958' type='quality-rule' originalName='SQL SELECT statement variations between Db2 to SQL server' active='true' detached='false' ignored='false' />

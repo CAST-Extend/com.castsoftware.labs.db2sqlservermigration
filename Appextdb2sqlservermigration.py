@@ -92,7 +92,7 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
                     obj = file.find_most_specific_object(linenb, 1)
                     self.propvalue.append(str(reference.value)+" "+str(reference.bookmark))
                     obj.save_violation('dbsqlservermigration_CustomMetrics.'+ rulename, reference.bookmark)
-                    #logging.debug("violation saved: >" +'dbsqlservermigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
+                    logging.debug("violation saved: >" +'dbsqlservermigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
                             #break
 #                     file.save_property('dbsqlservermigrationScript.'+sobjname, reference.value+" "+str(reference.bookmark) )
 #                     logging.info("property saved: >" +'dbsqlservermigrationScript.'+sobjname +" "+str(reference.bookmark)+ ' '+ str(reference.value))
@@ -139,7 +139,7 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
                 application.declare_property_ownership('dbsqlservermigrationScript.USER',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.SYSDUMMY',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.FOR_READ_ONLY',[declareitems])
-                application.declare_property_ownership('dbsqlservermigrationScript.WITH UR',[declareitems])
+                application.declare_property_ownership('dbsqlservermigrationScript.WITH_UR',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.BUFFERPOOL',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.INDEXBP',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.STOGROUP',[declareitems])

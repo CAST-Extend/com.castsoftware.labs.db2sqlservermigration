@@ -1,16 +1,8 @@
-<?xml version="1.1" encoding="UTF-8" ?>
-<Package PackName="ADG_METRIC_TREE_db2sqlservermigration" Type="INTERNAL" Version="7.3.4.1" SupportedServer="ALL" Display="ADG Metric Tree for db2sqlservermigration" DatabaseKind="KB_CENTRAL" Description="">
-	<Include>
-	</Include>
-	<Exclude>
-	</Exclude>
-	<Install>
-    </Install>
-	<Update>
-    </Update>
-	<Refresh>
-		<Step Type="DATA" File="AdgMetrics_db2sqlservermigration.xml" Model="assessment_model_tables.xml" Scope="db2sqlservermigrationScope"></Step>
-	</Refresh>
-	<Remove>
-	</Remove>
+<?xml version="1.0" encoding="utf-8"?>
+<Package PackName="com.castsoftware.labs.db2sqlservermigration.CENTRAL" Type="INTERNAL" Version="1.0.0.0" SupportedServer="ALL" Display="ADG Metric Tree for com.castsoftware.labs.db2sqlservermigration.CENTRAL" Description="ADG Metric Tree for com.castsoftware.labs.db2sqlservermigration.CENTRAL" DatabaseKind="KB_CENTRAL">
+<!--File generated with CAST Metrics Compiler - 8.3.30-->
+    <Refresh>
+        <Step Type="DATA" File="ADG_ConfigData.xml" Model="ADG_ConfigDataModel.xml" Scope="FULL_CONTENT">
+        </Step>
+    </Refresh>
 </Package>
