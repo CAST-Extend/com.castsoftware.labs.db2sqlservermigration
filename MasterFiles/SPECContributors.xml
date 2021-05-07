@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <root>
   
-    <metric id='61004' type='technical-criterion' originalName='Architecture - OS and Platform Independence' contributorId='2091000' contributorType='quality-rule' contributororiginalName='SQL language elements variations between Db2 to SQL server' critical='false' weight='6' />
+    <metric id='61004' type='technical-criterion' originalName='Architecture - OS and Platform Independence' contributorId='2091052' contributorType='quality-rule' contributororiginalName='SQL language elements variations between Db2 to SQL server' critical='false' weight='6' />
     <metric id='61004' type='technical-criterion' originalName='Architecture - OS and Platform Independence' contributorId='2091954' contributorType='quality-rule' contributororiginalName='Data type mapping between Db2 to SQL server' critical='false' weight='6' />
     <metric id='61004' type='technical-criterion' originalName='Architecture - OS and Platform Independence' contributorId='2091956' contributorType='quality-rule' contributororiginalName='Db2 SQL functions variations between Db2 to SQL server' critical='false' weight='6' />
     <metric id='61004' type='technical-criterion' originalName='Architecture - OS and Platform Independence' contributorId='2091958' contributorType='quality-rule' contributororiginalName='SQL SELECT statement variations between Db2 to SQL server' critical='false' weight='6' />

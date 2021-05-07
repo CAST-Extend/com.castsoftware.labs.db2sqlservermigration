@@ -1,4 +1,4 @@
-create or replace function  SET_dbsqlmigration_CustomMetrics(I_SET_ID int)
+create or replace function  SET_dbsqlmigration_Custom(I_SET_ID int)
 returns int
 as
 $body$

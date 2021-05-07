@@ -19,6 +19,7 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
         self.xmlfile = ""
         self.file = ""    
         self.propvalue=[]
+        self.uniqueobjlist =[]
         pass     
      
         
@@ -47,19 +48,63 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
                 continue
             #cast.analysers.log.debug("file found: >" + str(o.get_path()))
             logging.debug("file found: >" + str(o.get_path()))
-            self.getconfigsearch(o, application, root)
+            self.sqljavacsfilesearch(o, application, root, 'Search', 'sql') 
             #self.scan_Sql(application, o)               
+        
+        for o in application.search_objects(category='JV_FILE'):
+     
+            # check if file is analyzed source code, or if it generated (Unknown)
+            if not o.get_path():
+                continue
             
-    def getconfigsearch(self,  file, application, root): 
-        logging.info("file start")
+            if not (o.get_path().endswith('.java')):
+                continue
+            #cast.analysers.log.debug("file found: >" + str(o.get_path()))
+            logging.debug("file found: >" + str(o.get_path()))
+             
+            if (o.get_path().endswith('.java')):  
+                self.sqljavacsfilesearch(o, application, root, 'javafileSearch', 'java') 
+                
+        for o in application.search_objects(category='CAST_DotNet_CSharpFile'):
+            # check if file is analyzed source code, or if it generated (Unknown)
+            if not o.get_path():
+                continue
+            
+            if not (o.get_path().endswith('.cs')):
+                continue
+            #cast.analysers.log.debug("file found: >" + str(o.get_path()))
+            logging.debug("file found: >" + str(o.get_path()))
+             
+            if (o.get_path().endswith('.cs')):  
+                self.sqljavacsfilesearch(o, application, root, 'csharpfileSearch', 'cs')  
+                
+        for o in application.search_objects(category='sourceFile'):
+           
+            # check if file is analyzed source code, or if it generated (Unknown)
+            if not o.get_path():
+                continue
+            
+            if not (o.get_path().endswith('.properties')):
+                continue
+            #cast.analysers.log.debug("file found: >" + str(o.get_path()))
+            logging.debug("file found: >" + str(o.get_path()))
+         
+            if (o.get_path().endswith('.properties')):
+                self.getpropertiessearch(o, application, root)
+                  
+                
+    
+        
+    def getpropertiessearch(self,  file, application, root): 
+        logging.info("Properties java start")
        
         try:
-                    for group in root.findall('Search'):
+                    for group in root.findall('propertiesfileSearch'):
                         self.sregex = unescape(group.find('RegexPattern').text)
                         logging.debug("---"+str(self.sregex)+ "---")
                                    
-                        if file.get_name().endswith('.sql'):
-                            logging.info('Scanning sql  file :'+str(Path(file.get_path()).name))
+                        if file.get_name().endswith('.properties'):
+                            logging.info('Scanning properties  file :'+str(Path(file.get_path()).name))
                             if (os.path.isfile(file.get_path())):
                                 sobjname = group.find('propertyname').text 
                                 self.currentsrcfile= file
@@ -69,11 +114,36 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
                                 self.setprop(application, file, sobjname, sviolation); 
                                 
         except Exception as e:
-            logging.info(": error  db2Sql extension  set : %s", str(e))  
-            return  
-        # Final reporting in ApplicationPlugins.castlog
+            logging.info(": error  db2Sql extension  properties search  : %s", str(e))  
+            return 
         
-    def setprop(self, application, file, sobjname, rulename):
+   
+        
+    def sqljavacsfilesearch(self,  file, application, root,tag,fileext): 
+        logging.info("file start")
+       
+        try:
+                    for group in root.findall(tag):
+                        self.sregex = unescape(group.find('RegexPattern').text)
+                        logging.debug("---"+str(self.sregex)+ "---")
+                                   
+                        if file.get_name().endswith('.'+fileext):
+                            logging.info('Scanning '+fileext+ '  file :'+str(Path(file.get_path()).name))
+                            if (os.path.isfile(file.get_path())):
+                                sobjname = group.find('propertyname').text 
+                                self.currentsrcfile= file
+                                self.sgobjname=sobjname
+                                sviolation = group.find('Rulename').text 
+                                logging.debug(str(sobjname)+"Reg ex--->"+str(self.sregex) )
+                                self.sqljavacsharp(application, file, sobjname, sviolation); 
+                                
+        except Exception as e:
+            logging.info(": error  db2Sql extension  file search  set : %s", str(e))  
+            return  
+              
+        
+        
+    def sqljavacsharp(self, application, file, sobjname, rulename):
             # one RF for multiples patterns
             
             rfCall = ReferenceFinder()
@@ -82,7 +152,8 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
             # search all patterns in current program
             try:
                 self.propvalue =[]
-                getvalue=""
+                self.uniqueobjlist =[]
+                cntj= 0
                 references = [reference for reference in rfCall.find_references_in_file(file)]
                 for  reference in references:
                     reference.bookmark.file= file
@@ -90,24 +161,99 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
                     #logging.debug( str(reference.bookmark).split(',')[2])
                     #logging.debug("Specific object:"+ str(file.find_most_specific_object(linenb, 1)))
                     obj = file.find_most_specific_object(linenb, 1)
-                    self.propvalue.append(str(reference.value)+" "+str(reference.bookmark))
+                    cntj =cntj+1
+                    self.uniqueobjlist.append(sobjname + "cast" +str(obj))
                     obj.save_violation('dbsqlservermigration_CustomMetrics.'+ rulename, reference.bookmark)
                     logging.debug("violation saved: >" +'dbsqlservermigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
                             #break
 #                     file.save_property('dbsqlservermigrationScript.'+sobjname, reference.value+" "+str(reference.bookmark) )
 #                     logging.info("property saved: >" +'dbsqlservermigrationScript.'+sobjname +" "+str(reference.bookmark)+ ' '+ str(reference.value))
-                getvalue="".join(self.propvalue)
-                #logging.debug("Value of list-->"+ str(getvalue))
-                if len(getvalue) >0:
-                    obj.save_property('dbsqlservermigrationScript.'+sobjname, str(getvalue))
-                    #logging.info("property saved: --->" +'dbsqlservermigrationScript.'+sobjname +" "+str(getvalue))
-               
+                                #logging.info('unique' + str(self.uniqueobjlist))
+                self.unique(self.uniqueobjlist,application)
+                     
+            except Exception as e:
+                logging.info(": error  saving property violation   : %s", str(e))  
+                return 
 #       
             except Exception as e:
                 logging.info(": error  saving property violation   : %s", str(e))  
                 return 
             
-     
+    # function to get unique values
+    def unique(self, objcastlist, application):
+       
+        unique_list = []
+        #logging.info(str(objcastlist))
+       
+       
+        for x in objcastlist:
+            # check if exists in unique_list or not
+            if x not in unique_list:
+                unique_list.append(x)
+                  
+        for x in unique_list:
+            logging.debug('{} has occurred {} times'.format(x, self.countcastobject(objcastlist, x)))
+            logging.debug(x)
+            orgx=x
+            x= x.replace('castObject', ',')
+            x= x.replace('castFile', ',')
+            x=x.replace('(', '')
+            x= x.replace(')', '')
+            dbtype = x.split(',')[0].strip()
+            objname= x.split(',')[1].strip()
+            objcatergory =x.split(',')[2].strip()
+            
+            if objname.find('.') is not -1:
+                if objcatergory.find('sourceFile') is not  -1:
+                    objname = objname
+                else:
+                    objname = objname.split('.')[1]
+            MethodObjectReferences = list(application.search_objects(category=objcatergory,  name=objname,  load_properties=True))
+            if len(MethodObjectReferences)>0:
+                for obj in MethodObjectReferences : 
+                    cnt = str(self.countcastobject(objcastlist, orgx))
+                    obj.save_property('dbsqlservermigrationScript.'+dbtype, cnt)
+                    logging.debug("property saved: --->" +'dbsqlservermigrationScript.'+dbtype +" "+cnt)  
+                            
+    def countcastobject(self, lst, x):
+        count = 0
+        for ele in lst:
+            if (ele == x):
+                count = count + 1
+        return count 
+    
+    def setprop(self, application, file, sobjname, rulename):
+            # one RF for multiples patterns
+            
+            rfCall = ReferenceFinder()
+            rfCall.add_pattern(('srcline'),before ='' , element =self.sregex, after = '')     # requires application_1_4_7 or above
+            
+            # search all patterns in current program
+            try:
+#                 self.propvalue =[]
+                getvalue=""
+                cntprop= 0
+                references = [reference for reference in rfCall.find_references_in_file(file)]
+                for  reference in references:
+                    reference.bookmark.file= file
+                    cntprop =cntprop+1
+                    #self.propvalue.append(str(reference.value)+" "+str(reference.bookmark))
+                    file.save_violation('dbsqlservermigration_CustomMetrics.'+ rulename, reference.bookmark)
+                    logging.debug("violation saved: >" +'dbsqlservermigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
+                            #break
+#                     file.save_property('dbsqlservermigrationScript.'+sobjname, reference.value+" "+str(reference.bookmark) )
+#                     logging.info("property saved: >" +'dbsqlservermigrationScript.'+sobjname +" "+str(reference.bookmark)+ ' '+ str(reference.value))
+                getvalue=str(cntprop)
+                #logging.debug("Value of list-->"+ str(getvalue))
+                if cntprop >0:
+                    file.save_property('dbsqlservermigrationScript.'+sobjname, getvalue)
+                    logging.debug("property saved: --->" +'dbsqlservermigrationScript.'+sobjname +" "+getvalue)
+               
+#       
+            except Exception as e:
+                logging.info(": error  saving property violation on properties  : %s", str(e))  
+                return 
+            
     
     def setdeclareproperty(self, application):
         
@@ -115,7 +261,16 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
                      'SQLScriptProcedure','SQLScriptDML','SQLScriptFunction','SQLScriptView','SQLScriptTrigger',
                      'SQLScriptPackage','SQLScriptType','SQLScriptForeignKey','SQLScriptUniqueConstraint','SQLScriptEvent',
                      'SQLScriptSynonym','SQLScriptTableSynonym','SQLScriptViewSynonym','SQLScriptFunctionSynonym',
-                     'SQLScriptProcedureSynonym','SQLScriptPackageSynonym','SQLScriptTypeSynonym','SQLScriptMethod']
+                     'SQLScriptProcedureSynonym','SQLScriptPackageSynonym','SQLScriptTypeSynonym','SQLScriptMethod','JV_METHOD', 'JV_GENERIC_METHOD', 
+                     'JV_INST_METHOD', 'JV_INST_CLASS', 'JV_CTOR', 'JV_GENERIC_CTOR', 'JV_FILE', 'JV_INST_CTOR', 'JV_INTERFACE', 'JV_GENERIC_INTERFACE', 
+                     'JV_INST_INTERFACE', 'JV_GENERIC_CLASS','JV_PROJECT', 'JV_PACKAGE', 'JV_CLASS','CAST_DotNet_InterfaceCSharp','CAST_DotNet_GenericInterfaceCSharp','CAST_DotNet_InstantiatedGenericInterfaceCSharp',
+                     'CAST_DotNet_StructureCSharp','CAST_DotNet_GenericStructureCSharp','CAST_DotNet_InstantiatedGenericStructureCSharp','CAST_DotNet_InstantiatedGenericDelegateCSharp',
+                        'CAST_DotNet_ClassCSharp','CAST_DotNet_ClassCSharpException', 'CAST_DotNet_ClassCSharpCustomAttribute','CAST_DotNet_ClassCSharpDataSet','CAST_DotNet_ClassCSharpUserControl',
+                        'CAST_DotNet_ClassCSharpForm','CAST_DotNet_ClassCSharpCustomControl','CAST_DotNet_ClassCSharpComponent','CAST_DotNet_ClassCSharpServiceBase','CAST_DotNet_ClassCSharpServicedComponent',
+                        'CAST_DotNet_ClassCSharpInstaller','CAST_DotNet_ClassCSharpWebService','CAST_DotNet_ClassCSharpWebServiceProxy','CAST_DotNet_ClassCSharpCrystalReportClass','CAST_DotNet_GenericClassCSharp',
+                        'CAST_DotNet_InstantiatedGenericClassCSharp','CAST_DotNet_EventCSharp','CAST_DotNet_MethodCSharp','CAST_DotNet_GenericMethodCSharp','CAST_DotNet_InstantiatedGenericMethodCSharp',
+                        'CAST_DotNet_ConstructorCSharp','CAST_DotNet_DestructorCSharp','CAST_DotNet_CSharpObject','CAST_DotNet_CSharpGroupMethod','CAST_DotNet_CSharpGroupControl','CAST_DotNet_CSharpGroupConfig',
+                        'CAST_DotNet_CSharpFile', 'CAST_DotNet_UsingNamespaceDirectiveCSharp','CAST_DotNet_UsingAliasDirectiveCSharp']
         for declareitems in declarelist: 
                 application.declare_property_ownership('dbsqlservermigrationScript.CONCAT',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.DATEADD',[declareitems])
@@ -152,7 +307,7 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
                 application.declare_property_ownership('dbsqlservermigrationScript.ALL',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.WITH_RESTRICT_ON_DROP',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.VOLATILE',[declareitems])
-                application.declare_property_ownership('dbsqlservermigrationScript.YES',[declareitems])
+                application.declare_property_ownership('dbsqlservermigrationScript.VALUEYES',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.VARCHAR',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.INTEGER',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.DECIMAL',[declareitems])
@@ -160,7 +315,7 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
                 application.declare_property_ownership('dbsqlservermigrationScript.DATE_WITH_DEFAULT',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.TIMESTAMP_WITH_DEFAULT',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.PICTFREE',[declareitems])
-                application.declare_property_ownership('dbsqlservermigrationScript.NO',[declareitems])
+                application.declare_property_ownership('dbsqlservermigrationScript.VALUENO',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.FREEPAGE',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.BUFFERPOOL_Zos',[declareitems])
                 application.declare_property_ownership('dbsqlservermigrationScript.NONE',[declareitems])

@@ -213,8 +213,13 @@
 		<Rulename>CREATE_TABLE_statement</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bYES\b</RegexPattern>
-		<propertyname>YES</propertyname>
+		<RegexPattern>\bAPPEND YES\b</RegexPattern>
+		<propertyname>VALUEYES</propertyname>
+		<Rulename>CREATE_TABLE_statement</Rulename>
+	</Search>
+	<Search>
+		<RegexPattern>\bAPPEND NO\b</RegexPattern>
+		<propertyname>VALUEYES</propertyname>
 		<Rulename>CREATE_TABLE_statement</Rulename>
 	</Search>
 	<Search>
@@ -253,8 +258,13 @@
 		<Rulename>INDEX_statement</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bCOMPRESS\b</RegexPattern>
-		<propertyname>NO</propertyname>
+		<RegexPattern>\bCOMPRESS YES\b</RegexPattern>
+		<propertyname>VALUENO</propertyname>
+		<Rulename>INDEX_statement</Rulename>
+	</Search>
+	<Search>
+		<RegexPattern>\bCOMPRESS NO\b</RegexPattern>
+		<propertyname>VALUENO</propertyname>
 		<Rulename>INDEX_statement</Rulename>
 	</Search>
 	<Search>
@@ -268,7 +278,7 @@
 		<Rulename>INDEX_statement</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bGBPCACHE CHANGED \b</RegexPattern>
+		<RegexPattern>\bGBPCACHE CHANGED\b</RegexPattern>
 		<propertyname>NONE</propertyname>
 		<Rulename>INDEX_statement</Rulename>
 	</Search>
@@ -463,5 +473,22 @@
 		<Rulename>Data_type_mapping</Rulename>
 	</Search>
 	
+	<javafileSearch>
+		<RegexPattern>\bexecQuery\b</RegexPattern>
+		<propertyname>SYSDUMMY</propertyname>
+		<Rulename>SQL_language_elements</Rulename>
+	</javafileSearch>
+	
+	<csharpfileSearch>
+		<RegexPattern>\bexecQuery\b</RegexPattern>
+		<propertyname>SYSDUMMY</propertyname>
+		<Rulename>SQL_language_elements</Rulename>
+	</csharpfileSearch>
+	
+	<propertiesfileSearch>
+		<RegexPattern>\bOVERLAY\b</RegexPattern>
+		<propertyname>SYSDUMMY</propertyname>
+		<Rulename>SQL_language_elements</Rulename>
+	</propertiesfileSearch>
 	
  </db2sqlservermigrationUA>

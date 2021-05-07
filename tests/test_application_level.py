@@ -9,7 +9,7 @@ class TestIntegration(unittest.TestCase):
 
     def test2(self):
         
-        run(kb_name='dbmsql_local', application_name='msql', engine=create_postgres_engine(port=2282))
+        run(kb_name='dbsqlcs_local', application_name='mycs', engine=create_postgres_engine(port=2282))
 #        
        
 

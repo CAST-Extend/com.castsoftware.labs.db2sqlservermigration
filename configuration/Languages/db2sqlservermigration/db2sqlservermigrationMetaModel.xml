@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <metaModel file_level="client"  file_no="91">
 
+<category name="db2sqlservermigration" rid="2">
+		<description>db2sqlservermigration</description>
+		<attribute name="extensions" stringValue="*.properties"/>
+		<inheritedCategory name="UniversalLanguage"/>
+		<inheritedCategory name="CsvLanguage"/>
+	</category>
+
+    
+	<category name="APM db2sqlservermigration Module" rid="0">
+		<description>db2sqlservermigration</description>
+		<inheritedCategory name="APM Client Modules"/>
+	</category>
+
+	<category name="APM db2sqlservermigration Artifacts" rid="1">
+		<description>db2sqlservermigration Artifacts</description>
+		<inheritedCategory name="APM Client Language Artifacts"/>
+		<!-- <inheritedCategory name="APM Sources"/> -->
+	</category>
+	
+	
+	
+	<!-- db2sqlservermigration Enlighten group -->
+	<type name="Enlightendb2sqlservermigration" rid="700">
+		<description>db2sqlservermigration</description>
+		<tree parent="EnlightenUniversalObjects" category="EnlightenTree"/>
+	</type>
+	
+	<type name="db2sqlservermigrationProject" rid="3">
+		<description>db2sqlservermigration Project</description>
+		<inheritedCategory name="UAProject"/>
+		<inheritedCategory name="db2sqlservermigration"/>
+		<inheritedCategory name="APM db2sqlservermigration Module"/>
+	</type>
+	
+	<type name="db2sqlservermigration_SUBSET" rid="400">
+		<description>db2sqlservermigration Subset</description>
+		<inheritedCategory name="PROJECT_SUBSET"/>
+		<inheritedCategory name="db2sqlservermigration"/>
+		<inheritedCategory name="APM db2sqlservermigration Module"/>
+    </type>
+
 	 <partialType name="sourceFile" >
         <inheritedCategory name="dbsqlservermigrationScript"/>
         <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
@@ -125,12 +166,256 @@
         <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
      </partialType> 
      
+     <partialType name="JV_GENERIC_METHOD">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="JV_FILE">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType>
+      
+	  <partialType name="JV_INST_METHOD">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+	 
+	 <partialType name="JV_INST_CLASS">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType>
+	 
+	  <partialType name="JV_CTOR">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType>
+	 
+	 <partialType name="JV_METHOD">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType>
+     
+	  <partialType name="JV_GENERIC_CTOR">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType>
+	  <partialType name="JV_INST_CTOR">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType>
+	  <partialType name="JV_INTERFACE">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType>
+	  <partialType name="JV_GENERIC_INTERFACE">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType>
+	 <partialType name="JV_INST_INTERFACE">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType>
+
+     <partialType name="JV_GENERIC_CLASS">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+
+     <partialType name="JV_PROJECT">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType> 
+	 
+	  <partialType name="JV_PACKAGE">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType>
+	 
+	 <partialType name="JV_CLASS">
+       <inheritedCategory name="dbsqlservermigrationScript"/>
+        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+     </partialType>
+     
+   <partialType name="CAST_DotNet_InterfaceCSharp">
+	<inheritedCategory name="dbsqlservermigrationScript"/>
+	<inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+ </partialType>
+ 
+	<partialType name="CAST_DotNet_GenericInterfaceCSharp">
+		<inheritedCategory name="dbsqlservermigrationScript"/>
+		<inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	</partialType>
+	
+	<partialType name="CAST_DotNet_InstantiatedGenericInterfaceCSharp">
+		<inheritedCategory name="dbsqlservermigrationScript"/>
+		<inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	 </partialType>
+	 
+	<partialType name="CAST_DotNet_StructureCSharp">
+		<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_GenericStructureCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	<partialType name="CAST_DotNet_InstantiatedGenericStructureCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	<partialType name="CAST_DotNet_InstantiatedGenericDelegateCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	<partialType name="CAST_DotNet_ClassCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	<partialType name="CAST_DotNet_ClassCSharpException"> 
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	<partialType name="CAST_DotNet_ClassCSharpCustomAttribute">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	<partialType name="CAST_DotNet_ClassCSharpDataSet">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_ClassCSharpUserControl">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_ClassCSharpForm">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_ClassCSharpCustomControl">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_ClassCSharpComponent">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_ClassCSharpServiceBase">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_ClassCSharpServicedComponent">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_ClassCSharpInstaller">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_ClassCSharpWebService">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_ClassCSharpWebServiceProxy">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	  <partialType name="CAST_DotNet_ClassCSharpCrystalReportClass">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_GenericClassCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_InstantiatedGenericClassCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_EventCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_MethodCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	    <partialType name="CAST_DotNet_GenericMethodCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_InstantiatedGenericMethodCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_ConstructorCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+		 
+	<partialType name="CAST_DotNet_DestructorCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_CSharpObject">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_CSharpGroupMethod">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_CSharpGroupControl">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_CSharpGroupConfig">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_CSharpFile">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	      
+	<partialType name="CAST_DotNet_UsingNamespaceDirectiveCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	     </partialType>
+	     
+	<partialType name="CAST_DotNet_UsingAliasDirectiveCSharp">
+			<inheritedCategory name="dbsqlservermigrationScript"/>
+	        <inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+	</partialType>
           
-     <category name="dbsqlservermigration_CustomMetrics"  id="2091000">
+     <category name="dbsqlservermigration_CustomMetrics"  id="2091950">
 	  <description>db2 to SQL server migration code items need to be addressed</description>
-	  	  <property name="SQL_language_elements" type="integer" merge="sum"  id="2091000">
+	  	  <property name="SQL_language_elements" type="integer"   id="2091052">
 			<description>SQL language elements variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091000"/>
+			<attribute name="INF_TYPE" intValue="2091074"/>
 			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
@@ -139,63 +424,63 @@
 	 
 	   
 	 
-	  <property name="Data_type_mapping" type="integer"  merge="sum" id="2091954">
+	  <property name="Data_type_mapping" type="integer"   id="2091954">
 			<description>Data type mapping between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091000"/>
+			<attribute name="INF_TYPE" intValue="2091076"/>
 			<attribute name="INF_SUB_TYPE" intValue="2"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 
-	 <property name="Db2_SQL_functions" type="integer"   merge="sum" id="2091956">
+	 <property name="Db2_SQL_functions" type="integer"    id="2091956">
 			<description>Db2 SQL functions variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091000"/>
+			<attribute name="INF_TYPE" intValue="2091078"/>
 			<attribute name="INF_SUB_TYPE" intValue="3"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 
-	  <property name="SQL_SELECT_statement" type="integer" merge="sum"  id="2091958">
+	  <property name="SQL_SELECT_statement" type="integer"   id="2091958">
 			<description>SQL SELECT statement variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091000"/>
+			<attribute name="INF_TYPE" intValue="2091080"/>
 			<attribute name="INF_SUB_TYPE" intValue="4"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 
-	  <property name="CREATE_DATABASE_statement" type="integer" merge="sum"  id="2091960">
+	  <property name="CREATE_DATABASE_statement" type="integer"   id="2091960">
 			<description>CREATE DATABASE statement variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091000"/>
+			<attribute name="INF_TYPE" intValue="2091082"/>
 			<attribute name="INF_SUB_TYPE" intValue="5"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 
-	 <property name="CREATE_TABLE_statement" type="integer" merge="sum"  id="2091962">
+	 <property name="CREATE_TABLE_statement" type="integer"   id="2091962">
 			<description>CREATE TABLE statement variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091000"/>
+			<attribute name="INF_TYPE" intValue="2091084"/>
 			<attribute name="INF_SUB_TYPE" intValue="6"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	
-	  <property name="INDEX_statement" type="integer" merge="sum"  id="2091964">
+	  <property name="INDEX_statement" type="integer"   id="2091964">
 			<description>INDEX statement variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091000"/>
+			<attribute name="INF_TYPE" intValue="2091086"/>
 			<attribute name="INF_SUB_TYPE" intValue="7"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 
-	  <property name="stored_procedures" type="integer" merge="sum"  id="2091966">
+	  <property name="stored_procedures" type="integer"   id="2091966">
 			<description>stored procedures variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091000"/>
+			<attribute name="INF_TYPE" intValue="2091088"/>
 			<attribute name="INF_SUB_TYPE" intValue="8"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
@@ -203,27 +488,27 @@
 	 </property>
 	 
 
-      <property name="user_defined_functions" type="integer"  merge="sum" id="2091968">
+      <property name="user_defined_functions" type="integer"   id="2091968">
 			<description>user defined functions variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091000"/>
+			<attribute name="INF_TYPE" intValue="2091090"/>
 			<attribute name="INF_SUB_TYPE" intValue="9"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 	 
-	  <property name="procedural_SQL_statements" type="integer" merge="sum"  id="2091970">
+	  <property name="procedural_SQL_statements" type="integer"  id="2091970">
 			<description>Converting procedural SQL statements used in stored procedures, functions and triggers from IBM Db2 to SQL Server</description>
-			<attribute name="INF_TYPE" intValue="2091000"/>
+			<attribute name="INF_TYPE" intValue="2091092"/>
 			<attribute name="INF_SUB_TYPE" intValue="10"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 		 
-	  <property name="SQL_statements" type="integer"  merge="sum"  id="2091972">
+	  <property name="SQL_statements" type="integer"   id="2091972">
 			<description>Converting SQL statements from Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091000"/>
+			<attribute name="INF_TYPE" intValue="2091094"/>
 			<attribute name="INF_SUB_TYPE" intValue="11"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
@@ -548,7 +833,7 @@
             <attribute name="ACCESS_CVS" intValue="1"/>
             <attribute name="ACCESS_HTML" intValue="1"/>
       </property>
-	    <property name="YES" type="string" rid="475">
+	    <property name="VALUEYES" type="string" rid="475">
             <description>Converting CREATE DATABASE statement from Db2 YES to SQL server no equivalent</description>
             <attribute name="INF_TYPE" intValue="2091837"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
@@ -612,7 +897,7 @@
             <attribute name="ACCESS_CVS" intValue="1"/>
             <attribute name="ACCESS_HTML" intValue="1"/>
       </property>
-	  <property name="NO" type="string" rid="484">
+	  <property name="VALUENO" type="string" rid="484">
             <description>Converting CREATE INDEX statement Db2 NO to SQL server no equivalent </description>
             <attribute name="INF_TYPE" intValue="2091844"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
@@ -646,7 +931,7 @@
 			</property>
        <property name="NOT_CLUSTER" type="string" rid="488">
             <description>Additional Db2 for z_OS clauses Db2 NOT_CLUSTER to SQL server no equivalent </description>
-            <attribute name="INF_TYPE" intValue="2091910"/>
+            <attribute name="INF_TYPE" intValue="2091911"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -717,47 +1002,7 @@
             <attribute name="ACCESS_CVS" intValue="1"/>
             <attribute name="ACCESS_HTML" intValue="1"/>
       </property>
-<!-- 	    <property name="" type="string" rid="497"> -->
-<!--             <description> </description> -->
-<!--             <attribute name="INF_TYPE" intValue="2091856"/> -->
-<!--             <attribute name="INF_SUB_TYPE" intValue="1"/> -->
-<!--             <attribute name="ACCESS_APPVIEW" intValue="1"/> -->
-<!--             <attribute name="ACCESS_CVS" intValue="1"/> -->
-<!--             <attribute name="ACCESS_HTML" intValue="1"/> -->
-<!--       </property> -->
-<!-- 	   <property name="" type="string" rid="498"> -->
-<!--             <description> </description> -->
-<!--             <attribute name="INF_TYPE" intValue="2091857"/> -->
-<!--             <attribute name="INF_SUB_TYPE" intValue="1"/> -->
-<!--             <attribute name="ACCESS_APPVIEW" intValue="1"/> -->
-<!--             <attribute name="ACCESS_CVS" intValue="1"/> -->
-<!--             <attribute name="ACCESS_HTML" intValue="1"/> -->
-<!--       </property> -->
-	
-<!-- 	   <property name="" type="string" rid="499"> -->
-<!--             <description> </description> -->
-<!--             <attribute name="INF_TYPE" intValue="2091858"/> -->
-<!--             <attribute name="INF_SUB_TYPE" intValue="1"/> -->
-<!--             <attribute name="ACCESS_APPVIEW" intValue="1"/> -->
-<!--             <attribute name="ACCESS_CVS" intValue="1"/> -->
-<!--             <attribute name="ACCESS_HTML" intValue="1"/> -->
-<!--       </property> -->
-<!-- 	 <property name="" type="string" rid="500"> -->
-<!--             <description></description> -->
-<!--             <attribute name="INF_TYPE" intValue="2091859"/> -->
-<!--             <attribute name="INF_SUB_TYPE" intValue="1"/> -->
-<!--             <attribute name="ACCESS_APPVIEW" intValue="1"/> -->
-<!--             <attribute name="ACCESS_CVS" intValue="1"/> -->
-<!--             <attribute name="ACCESS_HTML" intValue="1"/> -->
-<!--       </property>  -->
-<!-- 	  <property name="" type="string" rid="501"> -->
-<!--             <description> </description> -->
-<!--             <attribute name="INF_TYPE" intValue="2091860"/> -->
-<!--             <attribute name="INF_SUB_TYPE" intValue="1"/> -->
-<!--             <attribute name="ACCESS_APPVIEW" intValue="1"/> -->
-<!--             <attribute name="ACCESS_CVS" intValue="1"/> -->
-<!--             <attribute name="ACCESS_HTML" intValue="1"/> -->
-<!--       </property> -->
+
 	  
 	   <property name="DETERMINISTIC" type="string" rid="502">
             <description>Converting user-defined functions from Db2 DETERMINISTIC to SQL Server no equivalent </description>
@@ -1078,7 +1323,7 @@
       </property> 
 	  <property name="DATATYPEGRAPHIC" type="string" rid="540">
             <description>Converting Datatype Db2 GRAPHIC  to SQLserver BINARY_DOUBLE</description>
-            <attribute name="INF_TYPE" intValue="2091900"/>
+            <attribute name="INF_TYPE" intValue="2091910"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>

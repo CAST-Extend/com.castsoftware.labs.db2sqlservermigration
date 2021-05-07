@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <root>
-    <metric id='2091000' type='quality-rule' originalName='SQL language elements variations between Db2 to SQL server' thresholdToGet1='70.0' thresholdToGet2='90.0' thresholdToGet3='95.0' thresholdToGet4='99.0' />
+    <metric id='2091052' type='quality-rule' originalName='SQL language elements variations between Db2 to SQL server' thresholdToGet1='70.0' thresholdToGet2='90.0' thresholdToGet3='95.0' thresholdToGet4='99.0' />
     <metric id='2091954' type='quality-rule' originalName='Data type mapping between Db2 to SQL server' thresholdToGet1='70.0' thresholdToGet2='90.0' thresholdToGet3='95.0' thresholdToGet4='99.0' />
     <metric id='2091956' type='quality-rule' originalName='Db2 SQL functions variations between Db2 to SQL server' thresholdToGet1='70.0' thresholdToGet2='90.0' thresholdToGet3='95.0' thresholdToGet4='99.0' />
     <metric id='2091958' type='quality-rule' originalName='SQL SELECT statement variations between Db2 to SQL server' thresholdToGet1='70.0' thresholdToGet2='90.0' thresholdToGet3='95.0' thresholdToGet4='99.0' />
