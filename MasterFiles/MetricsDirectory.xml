@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <root>
 	<metric id='-1' type='N/A' originalName='' active='N/A' detached='N/A' ignored='false' />
-	
+	<metric id="61009" type="technical-criterion" originalName="Complexity - Algorithmic and Control Structure Complexity" active='N/A' detached='N/A' ignored='false' />
+	<metric id="61017" type="technical-criterion" originalName="Documentation - Naming Convention Conformity" active='N/A' detached='N/A' ignored='false' />
+  	<metric id='61014' type='technical-criterion' originalName='Programming Practices - Error and Exception Handling' active='N/A' detached='N/A' ignored='false' />
+    <metric id='61024' type='technical-criterion' originalName='Programming Practices - Structuredness' active='N/A' detached='N/A' ignored='false' />
+    <metric id="66069" type="technical-criterion" originalName="Programming Practices - Unexpected Behavior" active='N/A' detached='N/A' ignored="false"/>
+    <metric id="61006" type="technical-criterion" originalName="Documentation - Style Conformity" active='N/A' detached='N/A' ignored="false"/>
     <metric id="61004" type="technical-criterion" originalName="Architecture - OS and Platform Independence" active='N/A' detached='N/A' ignored="false"/>
 	
-	<metric id='2091052' type='quality-rule' originalName='SQL language elements variations between Db2 to SQL server' active='true' detached='false' ignored='false' />
-    <metric id='2091954' type='quality-rule' originalName='Data type mapping between Db2 to SQL server' active='true' detached='false' ignored='false' />
-    <metric id='2091956' type='quality-rule' originalName='Db2 SQL functions variations between Db2 to SQL server' active='true' detached='false' ignored='false' />
-    <metric id='2091958' type='quality-rule' originalName='SQL SELECT statement variations between Db2 to SQL server' active='true' detached='false' ignored='false' />
-    <metric id='2091960' type='quality-rule' originalName='CREATE DATABASE statement variations between Db2 to SQL server' active='true' detached='false' ignored='false' />
-    <metric id='2091962' type='quality-rule' originalName='CREATE TABLE statement variations between Db2 to SQL server' active='true' detached='false' ignored='false' />
-    <metric id='2091964' type='quality-rule' originalName='CREATE TABLE statement variations between Db2 to SQL server' active='true' detached='false' ignored='false' />
-    <metric id='2091966' type='quality-rule' originalName='stored procedures variations between Db2 to SQL server' active='true' detached='false' ignored='false' />
-    <metric id='2091968' type='quality-rule' originalName='user defined functions variations between Db2 to SQL server' active='true' detached='false' ignored='false' />
-    <metric id='2091970' type='quality-rule' originalName='Converting procedural SQL statements used in stored procedures, functions and triggers from IBM DB2 to SQL Server' active='true' detached='false' ignored='false' />
-    <metric id='2091972' type='quality-rule' originalName='Converting SQL statements from DB2 to SQL server' active='true' detached='false' ignored='false' />
+	<metric id='2091052' type='quality-rule' originalName='SQL language elements variations between Db2 to SQL Server' active='true' detached='false' ignored='false' />
+    <metric id='2091954' type='quality-rule' originalName='Data type mapping between Db2 to SQL Server' active='true' detached='false' ignored='false' />
+    <metric id='2091956' type='quality-rule' originalName='Db2 SQL functions variations between Db2 to SQL Server' active='true' detached='false' ignored='false' />
+    <metric id='2091958' type='quality-rule' originalName='SQL SELECT statement variations between Db2 to SQL Server' active='true' detached='false' ignored='false' />
+    <metric id='2091960' type='quality-rule' originalName='CREATE DATABASE statement variations between Db2 to SQL Server' active='true' detached='false' ignored='false' />
+    <metric id='2091962' type='quality-rule' originalName='CREATE TABLE statement variations between Db2 to SQL Server' active='true' detached='false' ignored='false' />
+    <metric id='2091964' type='quality-rule' originalName='CREATE TABLE statement variations between Db2 to SQL Server' active='true' detached='false' ignored='false' />
+    <metric id='2091966' type='quality-rule' originalName='stored procedures variations between Db2 to SQL Server' active='true' detached='false' ignored='false' />
+    <metric id='2091968' type='quality-rule' originalName='user defined functions variations between Db2 to SQL Server' active='true' detached='false' ignored='false' />
+    <metric id='2091970' type='quality-rule' originalName='procedural SQL statements variations between Db2 to SQL Server' active='true' detached='false' ignored='false' />
+    <metric id='2091972' type='quality-rule' originalName='SQL statements variations between Db2 to SQL Server' active='true' detached='false' ignored='false' />
  
  </root>

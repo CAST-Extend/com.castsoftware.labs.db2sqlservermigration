@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Package PackName="PLUGIN_dbsqlservermigration_LOCAL" Type="SPECIFIC" Version="1.0.0.0" SupportedServer="ALL" Display="ADG Metric Tree for dbsqlservermigration" Description="" DatabaseKind="KB_LOCAL">
+<Package PackName="PLUGIN_db2sqlservermigration_LOCAL" Type="SPECIFIC" Version="1.0.0.0" SupportedServer="ALL" Display="ADG Metric Tree for db2sqlservermigration" Description="" DatabaseKind="KB_LOCAL">
 	<Include>
 	</Include>
 	<Exclude>

@@ -9,7 +9,7 @@
 	<Update>
     </Update>
 	<Refresh>
-		<Step Type="DATA" File="AdgMetrics_db2sqlservermigration.xml" Model="..\assessment_model_tables.xml" Scope="db2sqlservermigrationScope"></Step>
+		<Step Type="DATA" File="AdgMetrics_db2sqlmigration.xml" Model="..\assessment_model_tables.xml" Scope="db2sqlservermigrationScope"></Step>
 	</Refresh>
 	<Remove>
 	</Remove>

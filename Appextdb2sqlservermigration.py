@@ -65,7 +65,7 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
             if (o.get_path().endswith('.java')):  
                 self.sqljavacsfilesearch(o, application, root, 'javafileSearch', 'java') 
                 
-        for o in application.search_objects(category='CAST_DotNet_CSharpFile'):
+        for o in application.search_objects(category='CAST_DotNet_CSharpFile'): 
             # check if file is analyzed source code, or if it generated (Unknown)
             if not o.get_path():
                 continue
@@ -164,7 +164,7 @@ class db2sqlservermigrationExtensionApplication(ApplicationLevelExtension):
                     cntj =cntj+1
                     self.uniqueobjlist.append(sobjname + "cast" +str(obj))
                     obj.save_violation('dbsqlservermigration_CustomMetrics.'+ rulename, reference.bookmark)
-                    logging.debug("violation saved: >" +'dbsqlservermigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
+                    logging.info("violation saved: >" +'dbsqlservermigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
                             #break
 #                     file.save_property('dbsqlservermigrationScript.'+sobjname, reference.value+" "+str(reference.bookmark) )
 #                     logging.info("property saved: >" +'dbsqlservermigrationScript.'+sobjname +" "+str(reference.bookmark)+ ' '+ str(reference.value))

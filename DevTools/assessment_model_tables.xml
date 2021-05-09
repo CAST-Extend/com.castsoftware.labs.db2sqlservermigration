@@ -106,7 +106,7 @@
     </index>
   </table>
   
-  <scope name="db2sqlservermigrationScope">
+ <scope name="db2sqlservermigrationScope">
                <scopetable name="DSS_METRIC_TYPES" filter="(METRIC_ID BETWEEN 2091000 AND 2091999)"/>
                <scopetable name="DSS_METRIC_TYPE_TREES" filter="(METRIC_ID BETWEEN 2091000 AND 2091999)"/>
                <scopetable name="DSS_METRIC_VALUE_TYPES" filter="(METRIC_ID BETWEEN 2091000 AND 2091999)"/>

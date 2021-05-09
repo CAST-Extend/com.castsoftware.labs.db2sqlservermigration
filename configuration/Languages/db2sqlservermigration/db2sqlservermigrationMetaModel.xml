@@ -23,7 +23,7 @@
 	
 	
 	<!-- db2sqlservermigration Enlighten group -->
-	<type name="Enlightendb2sqlservermigration" rid="700">
+	<type name="Enlightendb2sqlservermigration" rid="900">
 		<description>db2sqlservermigration</description>
 		<tree parent="EnlightenUniversalObjects" category="EnlightenTree"/>
 	</type>
@@ -41,6 +41,15 @@
 		<inheritedCategory name="db2sqlservermigration"/>
 		<inheritedCategory name="APM db2sqlservermigration Module"/>
     </type>
+    
+    <type name="db2sqlservermigration_type" rid="4">
+		<description>DB2 to sqlserver migration</description>
+		<inheritedCategory name="UAObject"/>
+		<inheritedCategory name="dbsqlservermigrationScript"/>
+		<inheritedCategory name="dbsqlservermigration_CustomMetrics"/>
+		<inheritedCategory name="APM db2sqlservermigration Artifacts"/>
+		<tree parent="Enlightendb2sqlservermigration" category="EnlightenTree"/>
+	</type>
 
 	 <partialType name="sourceFile" >
         <inheritedCategory name="dbsqlservermigrationScript"/>
@@ -413,75 +422,73 @@
           
      <category name="dbsqlservermigration_CustomMetrics"  id="2091950">
 	  <description>db2 to SQL server migration code items need to be addressed</description>
-	  	  <property name="SQL_language_elements" type="integer"   id="2091052">
-			<description>SQL language elements variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091074"/>
+	 <property name="SQL_language_elements" type="integer"   id="2091052">
+			<description>SQL language elements variations between Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091052"/>
 			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 
-	   
-	 
 	  <property name="Data_type_mapping" type="integer"   id="2091954">
-			<description>Data type mapping between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091076"/>
-			<attribute name="INF_SUB_TYPE" intValue="2"/>
+			<description>Data type mapping between Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091954"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 
 	 <property name="Db2_SQL_functions" type="integer"    id="2091956">
-			<description>Db2 SQL functions variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091078"/>
-			<attribute name="INF_SUB_TYPE" intValue="3"/>
+			<description>Db2 SQL functions variations between Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091956"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 
 	  <property name="SQL_SELECT_statement" type="integer"   id="2091958">
-			<description>SQL SELECT statement variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091080"/>
-			<attribute name="INF_SUB_TYPE" intValue="4"/>
+			<description>SQL SELECT statement variations between Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091958"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 
 	  <property name="CREATE_DATABASE_statement" type="integer"   id="2091960">
-			<description>CREATE DATABASE statement variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091082"/>
-			<attribute name="INF_SUB_TYPE" intValue="5"/>
+			<description>CREATE DATABASE statement variations between Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091960"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 
 	 <property name="CREATE_TABLE_statement" type="integer"   id="2091962">
-			<description>CREATE TABLE statement variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091084"/>
-			<attribute name="INF_SUB_TYPE" intValue="6"/>
+			<description>CREATE TABLE statement variations between Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091962"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	
 	  <property name="INDEX_statement" type="integer"   id="2091964">
-			<description>INDEX statement variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091086"/>
-			<attribute name="INF_SUB_TYPE" intValue="7"/>
+			<description>INDEX statement variations between Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091964"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 
 	  <property name="stored_procedures" type="integer"   id="2091966">
-			<description>stored procedures variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091088"/>
-			<attribute name="INF_SUB_TYPE" intValue="8"/>
+			<description>stored procedures variations between Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091966"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
@@ -489,27 +496,27 @@
 	 
 
       <property name="user_defined_functions" type="integer"   id="2091968">
-			<description>user defined functions variations between Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091090"/>
-			<attribute name="INF_SUB_TYPE" intValue="9"/>
+			<description>user defined functions variations between Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091968"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 	 	 
 	  <property name="procedural_SQL_statements" type="integer"  id="2091970">
-			<description>Converting procedural SQL statements used in stored procedures, functions and triggers from IBM Db2 to SQL Server</description>
-			<attribute name="INF_TYPE" intValue="2091092"/>
-			<attribute name="INF_SUB_TYPE" intValue="10"/>
+			<description>procedural SQL statements variations between Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091970"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
 	 </property>
 		 
 	  <property name="SQL_statements" type="integer"   id="2091972">
-			<description>Converting SQL statements from Db2 to SQL server</description>
-			<attribute name="INF_TYPE" intValue="2091094"/>
-			<attribute name="INF_SUB_TYPE" intValue="11"/>
+			<description>SQL statements variations between Db2 to SQL Server</description>
+			<attribute name="INF_TYPE" intValue="2091972"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
 			<attribute name="ACCESS_APPVIEW" intValue="1"/>
 			<attribute name="ACCESS_CVS" intValue="1"/>
 			<attribute name="ACCESS_HTML" intValue="1"/>
